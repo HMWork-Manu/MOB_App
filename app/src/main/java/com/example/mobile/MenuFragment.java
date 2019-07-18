@@ -26,9 +26,8 @@ public class MenuFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //login button
-        logButton= view.findViewById(R.id.button);
 
+        logButton = view.findViewById(R.id.loginMenubtn);
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,5 +106,8 @@ public class MenuFragment extends Fragment {
                 fr.commit();
             }
         });
+
+
+
     }
 }
