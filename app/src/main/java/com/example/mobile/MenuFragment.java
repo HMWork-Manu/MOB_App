@@ -22,6 +22,10 @@ public class MenuFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        //ABCDEFGHIJK
+
+
+
         //code here
         ImageView discount=view.findViewById(R.id.discountMenuImg);
         ImageView promotion=view.findViewById(R.id.offerMenuImg);
