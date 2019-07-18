@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_discount"
+            android:icon="@drawable/discountmenu"
+            android:title="Discount" />
+        <item
+            android:id="@+id/nav_promotion"
+            android:icon="@drawable/promotionmenu"
+            android:title="Promotion"/>
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/userprofile"
+            android:title="User Profile"/>
+        <item
+            android:id="@+id/nav_staff"
+            android:icon="@drawable/staffprofile"
+            android:title="Staff Profile"/>
+        <item
+            android:id="@+id/nav_item"
+            android:icon="@drawable/itemlist"
+            android:title="Item List"/>
+        <item
+            android:id="@+id/nav_company"
+            android:icon="@drawable/companypro"
+            android:title="Compny Profile"/>
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_lock_black"
+            android:title="Login"/>
+    </group>
+
+</menu>
