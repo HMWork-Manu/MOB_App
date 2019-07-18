@@ -23,6 +23,8 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        //new code 1234
+
         TextView reg = view.findViewById(R.id.regTxt);
 
         reg.setOnClickListener(new View.OnClickListener() {
