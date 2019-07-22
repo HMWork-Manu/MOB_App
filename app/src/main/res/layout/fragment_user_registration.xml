@@ -137,7 +137,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/fullNameTxt"
         android:layout_width="220dp"
         android:layout_height="30dp"
         android:layout_marginStart="151dp"
@@ -155,7 +155,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/addrTxt"
         android:layout_width="220dp"
         android:layout_height="30dp"
         android:layout_marginStart="151dp"
@@ -173,7 +173,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/nicTxt"
         android:layout_width="220dp"
         android:layout_height="30dp"
         android:layout_marginStart="151dp"

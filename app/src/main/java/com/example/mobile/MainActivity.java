@@ -1,10 +1,12 @@
 package com.example.mobile;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.core.view.GravityCompat;
@@ -21,6 +23,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+
+
 
 import android.view.Menu;
 
@@ -41,6 +46,16 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        //loading homepage when app start
+        Fragment fragment1 = new MenuFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fu = fragmentManager.beginTransaction();
+        fu.replace(R.id.screen_area,fragment1);
+        fu.commit();
+
+
     }
 
     @Override
@@ -60,20 +75,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -85,7 +86,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            fragment = new MenuFragment();
+           fragment = new MenuFragment();
+
         } else if (id == R.id.nav_user) {
             fragment = new UserFragment();
 
