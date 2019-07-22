@@ -46,6 +46,16 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        //loading homepage when app start
+        Fragment fragment1 = new MenuFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fu = fragmentManager.beginTransaction();
+        fu.replace(R.id.screen_area,fragment1);
+        fu.commit();
+
+
     }
 
     @Override
@@ -76,7 +86,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            fragment = new MenuFragment();
+           fragment = new MenuFragment();
+
         } else if (id == R.id.nav_user) {
             fragment = new UserFragment();
 
