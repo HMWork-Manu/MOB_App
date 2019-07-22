@@ -23,4 +23,5 @@
     <string name="loyalty_points">Loyalty Points</string>
     <string name="last_purchase_location">Last Purchase Location</string>
     <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_abcds">abcds</string>
 </resources>
