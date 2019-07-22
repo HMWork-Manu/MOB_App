@@ -19,7 +19,7 @@ public class ConnectionClass {
         try {
 
             Class.forName("com.mysql.jdbc.Driver");
-            String mysqlConnUrl = "jdbc:mysql://192.168.1.110:3306/abc";
+            String mysqlConnUrl = "jdbc:mysql://192.168.1.107:3306/abc";
             String mysqlUserName = "abcd";
             String mysqlPassword = "1234";
             connection = DriverManager.getConnection(mysqlConnUrl, mysqlUserName , mysqlPassword);
