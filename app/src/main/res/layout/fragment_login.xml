@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/logingUsernameTxt"
-        android:layout_width="220dp"
-        android:layout_height="40dp"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
         android:layout_marginStart="98dp"
         android:layout_marginLeft="98dp"
         android:layout_marginTop="222dp"
@@ -29,8 +29,8 @@
 
     <EditText
         android:id="@+id/loginPasswordTxt"
-        android:layout_width="220dp"
-        android:layout_height="40dp"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
         android:layout_marginStart="98dp"
         android:layout_marginLeft="98dp"
         android:layout_marginTop="279dp"
