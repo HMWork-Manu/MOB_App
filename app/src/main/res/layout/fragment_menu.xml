@@ -128,10 +128,18 @@
 
     <TextView
         android:id="@+id/logUnameTxtView"
-        android:layout_width="76dp"
-        android:layout_height="24dp"
+        android:layout_width="114dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="661dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="308dp"
-        tools:layout_editor_absoluteY="49dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

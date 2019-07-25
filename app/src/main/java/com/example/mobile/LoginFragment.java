@@ -91,18 +91,17 @@ public class LoginFragment extends Fragment {
                         status=rs.getString("status");
                     }
 
-                    System.out.println(un);
-                    System.out.println(pw);
-                    System.out.println(status);
 
                     if (un.equals(userName) && pw.equals(passW)){
                         if(status.equals("user")){
 
-                            FragmentTransaction fr = getFragmentManager().beginTransaction();
-                            fr.replace(R.id.screen_area,new MenuFragment());
-                            fr.commit();
+
+                           FragmentTransaction fr = getFragmentManager().beginTransaction();
+                           fr.replace(R.id.screen_area,new MenuFragment());
+                           fr.commit();
 
                         }else if(status.equals("staff")){
+
                             FragmentTransaction fr = getFragmentManager().beginTransaction();
                             fr.replace(R.id.screen_area,new MenuFragment());
                             fr.commit();
