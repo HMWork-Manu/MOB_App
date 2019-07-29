@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MenuFragment extends Fragment {
+public class MenuFragment1 extends Fragment {
     Fragment fragment;
     Button logButton;
 
@@ -24,7 +24,7 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_menu,null);
+        return inflater.inflate(R.layout.fragment_menu1,null);
 
 
 
@@ -55,7 +55,6 @@ public class MenuFragment extends Fragment {
         ImageView item=view.findViewById(R.id.itemMenuImg);
         ImageView company=view.findViewById(R.id.companyMenuImg);
 
-        user.setEnabled(false);
         staff.setEnabled(false);
 
         //Discount

@@ -33,7 +33,5 @@ public class ConnectionClass {
         }
 
         return connection;
-
-
     }
 }

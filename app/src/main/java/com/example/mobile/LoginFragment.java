@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -97,14 +98,17 @@ public class LoginFragment extends Fragment {
 
 
                            FragmentTransaction fr = getFragmentManager().beginTransaction();
-                           fr.replace(R.id.screen_area,new MenuFragment());
+                           fr.replace(R.id.screen_area,new MenuFragment1());
                            fr.commit();
+                            Toast.makeText(getActivity(),"logged in as User", Toast.LENGTH_SHORT).show();
+
 
                         }else if(status.equals("staff")){
 
                             FragmentTransaction fr = getFragmentManager().beginTransaction();
-                            fr.replace(R.id.screen_area,new MenuFragment());
+                            fr.replace(R.id.screen_area,new MenuFragment2());
                             fr.commit();
+                            Toast.makeText(getActivity(),"logged in as Staff", Toast.LENGTH_SHORT).show();
 
                         }
                     }
